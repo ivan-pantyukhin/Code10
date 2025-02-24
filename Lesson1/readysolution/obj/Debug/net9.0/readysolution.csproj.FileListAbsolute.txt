@@ -1,0 +1,15 @@
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\obj\Debug\net9.0\readysolution.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\obj\Debug\net9.0\readysolution.AssemblyInfoInputs.cache
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\obj\Debug\net9.0\readysolution.AssemblyInfo.cs
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\obj\Debug\net9.0\readysolution.csproj.CoreCompileInputs.cache
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\obj\Debug\net9.0\readysolution.sourcelink.json
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\bin\Debug\net9.0\readysolution.exe
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\bin\Debug\net9.0\readysolution.deps.json
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\bin\Debug\net9.0\readysolution.runtimeconfig.json
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\bin\Debug\net9.0\readysolution.dll
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\bin\Debug\net9.0\readysolution.pdb
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\obj\Debug\net9.0\readysolution.dll
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\obj\Debug\net9.0\refint\readysolution.dll
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\obj\Debug\net9.0\readysolution.pdb
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\obj\Debug\net9.0\readysolution.genruntimeconfig.cache
+C:\Users\Иван\Desktop\обучение\backend\hwproject\Code10\Lesson1\readysolution\obj\Debug\net9.0\ref\readysolution.dll
