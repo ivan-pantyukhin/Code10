@@ -6,7 +6,7 @@
 
 1. Для начала необходимо добавить информацию о `upstream` (основной репозиторий)
 ```bash
-» git remote add upstream https://github.com/gnipka-pc/Code10.git
+git remote add upstream https://github.com/gnipka-pc/Code10.git
 ```
   - Проверьте, что `upstream` добавлен командой `git remote -v`
 ```bash
@@ -34,4 +34,4 @@ git commit -m "Merged updates from upstream"
 git push origin main
 ```
 
-### Пункт 1 необходимо выполнить только один раз, после этого информация об upstream репозитории будет сохранена
+### Пункт 1 необходимо выполнить только один раз, после этого информация об `upstream` репозитории будет сохранена
