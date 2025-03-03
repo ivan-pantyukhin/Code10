@@ -1,35 +1,142 @@
-﻿namespace readysolution;
+﻿using System;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
-        // практика А
-        //  Объявление переменных Создайте программу на псевдоязыке, которая объявляет различные переменные разных 
-//типов данных (целочисленный, вещественный, строковый и логический) и выводит их значения на экран.
-int age = 20;
-Console.WriteLine($"Age: {age}");
-double pi = 3.14;
-Console.WriteLine($"pi: {pi}");
-string name = "John";
-Console.WriteLine($"name: {name}");
-bool isMale = false;
-Console.WriteLine($"isMale: {isMale}");
-Console.ReadKey();
+        int number2 = 0;
 
-//Напишите программу, которая принимает два числа от пользователя и выполняет арифметические операции (сложение, 
-//вычитание, умножение, деление) над ними, выводя результат каждой операции на экран.
- Console.WriteLine("Введите 1 число");
- int numeber1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Ввелите 2 число");
- int numeber2 =Convert.ToInt32(Console.ReadLine());
- int sum = numeber1 + numeber2;
- Console.WriteLine($"sum: {sum}");
- int diff = numeber1 - numeber2;
-  Console.WriteLine($"diff: {diff}");
-  int mult = numeber1*numeber2;
-  Console.WriteLine($"mult: {mult}");
-  int division = numeber1/numeber2;
-  Console.WriteLine($"division: {division}");
+        // Практика А
+
+        // Объявление переменных разных типов данных и вывод их значений
+        int age = 20;
+        Console.WriteLine($"Age: {age}");
+
+        double pi = 3.14;
+        Console.WriteLine($"Pi: {pi}");
+
+        string name = "John";
+        Console.WriteLine($"Name: {name}");
+
+        bool isMale = false;
+        Console.WriteLine($"Is Male: {isMale}");
+
+
+        // Арифметические операции с двумя числами
+        Console.WriteLine("Введите первое число:");
+
+    ;
+
+        if (int.TryParse(Console.ReadLine(), out int number1))
+        {
+            Console.WriteLine("Введите второе число:");
+            if (!int.TryParse(Console.ReadLine(), out int number2))
+            {
+                Console.WriteLine("Некорректный ввод второго числа.");
+            }
+            else
+            {
+                int sum = number1 + number2;
+                Console.WriteLine($"Сумма: {sum}");
+
+                int diff = number1 - number2;
+                Console.WriteLine($"Разность: {diff}");
+
+                int mult = number1 * number2;
+                Console.WriteLine($"Произведение: {mult}");
+
+                if (number2 != 0) //Проверка на деление на ноль
+                {
+                    double division = (double)number1 / number2; // Преобразование в double для точного результата
+                    Console.WriteLine($"Частное: {division}");
+                }
+                else
+                {
+                    Console.WriteLine("Деление на ноль невозможно!");
+                }
+            }
+        }
+        else
+        {
+            Console.WriteLine("Некорректный ввод первого числа.");
+        }
+
+
+        // Условие с проверкой на дождь
+        Console.WriteLine("На улице идет дождь? (да/нет)");
+#pragma warning disable CS8602 // Разыменование вероятной пустой ссылки.
+        string answer = Console.ReadLine().ToLower(); // Преобразование в нижний регистр для большей точности
+#pragma warning restore CS8602 // Разыменование вероятной пустой ссылки.
+        if (answer == "да")
+        {
+            Console.WriteLine("Не забудьте зонт!");
+        }
+        else
+        {
+            Console.WriteLine("Можно без зонта!");
+        }
+
+
+        // Цикл for
+        Console.WriteLine("Цикл for:");
+        for (int i = 0; i < 5; i++)
+        {
+            Console.WriteLine(i); // 0 1 2 3 4
+        }
+
+
+        // Сравнение двух чисел
+        Console.WriteLine("Введите первое число для сравнения:");
+        if (int.TryParse(Console.ReadLine(), out number1))
+        {
+            Console.WriteLine("Введите второе число для сравнения:");
+            if (int.TryParse(Console.ReadLine(), out number2))
+            {
+                if (number1 < number2)
+                {
+                    Console.WriteLine($"Меньшее число: {number1}");
+                    Console.WriteLine($"Большее число: {number2}");
+                }
+                else if (number1 > number2)
+                {
+                    Console.WriteLine($"Меньшее число: {number2}");
+                    Console.WriteLine($"Большее число: {number1}");
+                }
+                else
+                {
+                    Console.WriteLine("Числа равны");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Некорректный ввод второго числа.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Некорректный ввод первого числа.");
+        }
+
+
+        // Практика В
+        Master(); //Вызов функции master
+
+        Console.ReadKey(); //Задержка консоли для просмотра результатов
+
+        void Master()
+        {
+            Console.WriteLine("Введите ваше имя: ");
+            Console.WriteLine("Здравствуйте, " + Console.ReadLine() + "! Введите год вашего рождения:");
+
+            if (int.TryParse(Console.ReadLine(), out int birthYear))
+            {
+                int age = DateTime.Now.Year - birthYear;
+                Console.WriteLine($"{age} - Ваш возраст");
+            }
+            else
+            {
+                Console.WriteLine("Некорректный ввод года рождения.");
+            }
+        }
     }
 }
