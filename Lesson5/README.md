@@ -200,6 +200,44 @@ class MathOperations
 int result = MathOperations.Multiply(3, 4); // 12
 ```
 
+**Наследование** - Один из главных принципов ООП, позволяющий одному классу (потомку) наследовать свойства и методы другого класса (родителя). Это помогает избежать дублирования кода и упростить его поддержку
+
+Пример наследования (базовый класс Animal и класс-наследник Dog):
+
+```csharp
+class Animal
+{
+    public string Name { get; set; }
+    
+    public void Eat()
+    {
+        Console.WriteLine($"{Name} ест.");
+    }
+}
+
+// Наследуем `Animal`
+class Dog : Animal
+{
+    public void Bark()
+    {
+        Console.WriteLine($"{Name} лает: Гав-гав!");
+    }
+}
+
+// Использование
+class Program
+{
+    static void Main()
+    {
+        Dog myDog = new Dog();
+        myDog.Name = "Шарик";
+        myDog.Eat();  // Шарик ест.
+        myDog.Bark(); // Шарик лает: Гав-гав!
+    }
+}
+```
+Здесь класс Dog унаследовал Animal, поэтому Dog может использовать методы Eat() и поле Name, как если бы они были его собственными
+
 ##
 
 *Все задачи необходимо выполнять в одном проекте*
